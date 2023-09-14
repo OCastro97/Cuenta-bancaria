@@ -1,0 +1,39 @@
+;;; 
+Export: Release 19.0.0.0.0 - Production on Dom Jul 9 16:00:08 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+;;; 
+Conectado a: Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Iniciando "SYSTEM"."SYS_EXPORT_SCHEMA_01":  System/******** directory=DATA_PUMP_DIR dumpfile=respaldo_07-09-2023_16-00-02-66.dmp logfile=respaldo_07-09-2023_16-00-02-66.log schemas=PROYECTO_FINAL 
+Procesando el tipo de objeto SCHEMA_EXPORT/TABLE/TABLE_DATA
+Procesando el tipo de objeto SCHEMA_EXPORT/TABLE/INDEX/STATISTICS/INDEX_STATISTICS
+Procesando el tipo de objeto SCHEMA_EXPORT/TABLE/STATISTICS/TABLE_STATISTICS
+Procesando el tipo de objeto SCHEMA_EXPORT/STATISTICS/MARKER
+Procesando el tipo de objeto SCHEMA_EXPORT/DEFAULT_ROLE
+Procesando el tipo de objeto SCHEMA_EXPORT/PRE_SCHEMA/PROCACT_SCHEMA
+Procesando el tipo de objeto SCHEMA_EXPORT/TABLE/TABLE
+Procesando el tipo de objeto SCHEMA_EXPORT/TABLE/CONSTRAINT/CONSTRAINT
+Procesando el tipo de objeto SCHEMA_EXPORT/TABLE/CONSTRAINT/REF_CONSTRAINT
+. . "PROYECTO_FINAL"."CLIENTES"                 8.296 KB       2 filas exportadas
+. . "PROYECTO_FINAL"."TIPO_CUENTA"              5.601 KB       3 filas exportadas
+. . "PROYECTO_FINAL"."TIPO_CLIENTE"             5.593 KB       3 filas exportadas
+. . "PROYECTO_FINAL"."TIPO_TRANSACCION"         5.601 KB       3 filas exportadas
+. . "PROYECTO_FINAL"."CUENTA"                       0 KB       0 filas exportadas
+. . "PROYECTO_FINAL"."DEPARTAMENTOS"                0 KB       0 filas exportadas
+. . "PROYECTO_FINAL"."EMPLEADOS"                    0 KB       0 filas exportadas
+. . "PROYECTO_FINAL"."EMPLEADOS_DEPARTAMENTOS"      0 KB       0 filas exportadas
+. . "PROYECTO_FINAL"."INVERSIONES"                  0 KB       0 filas exportadas
+. . "PROYECTO_FINAL"."PAGOS_TARJETAS"               0 KB       0 filas exportadas
+. . "PROYECTO_FINAL"."PRESTAMOS"                    0 KB       0 filas exportadas
+. . "PROYECTO_FINAL"."PRODUCTOS"                    0 KB       0 filas exportadas
+. . "PROYECTO_FINAL"."REPORTES_FINANCIEROS"         0 KB       0 filas exportadas
+. . "PROYECTO_FINAL"."SUCURSALES"                   0 KB       0 filas exportadas
+. . "PROYECTO_FINAL"."TARJETAS_CREDITO"             0 KB       0 filas exportadas
+. . "PROYECTO_FINAL"."TRANSACCIONES"                0 KB       0 filas exportadas
+. . "PROYECTO_FINAL"."VENTAS"                       0 KB       0 filas exportadas
+La tabla maestra "SYSTEM"."SYS_EXPORT_SCHEMA_01" se ha cargado/descargado correctamente
+******************************************************************************
+El juego de archivos de volcado para SYSTEM.SYS_EXPORT_SCHEMA_01 es:
+  C:\ORACLE\BD_BACKUP\RESPALDO_07-09-2023_16-00-02-66.DMP
+El trabajo "SYSTEM"."SYS_EXPORT_SCHEMA_01" ha terminado correctamente en Dom Jul 9 16:01:21 2023 elapsed 0 00:01:01

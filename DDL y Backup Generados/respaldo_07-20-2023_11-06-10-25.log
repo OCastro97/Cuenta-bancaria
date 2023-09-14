@@ -1,0 +1,49 @@
+;;; 
+Import: Release 19.0.0.0.0 - Production on Jue Jul 20 11:21:11 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+;;; 
+Conectado a: Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+La tabla maestra "SYSTEM"."SYS_IMPORT_FULL_01" se ha cargado/descargado correctamente
+Iniciando "SYSTEM"."SYS_IMPORT_FULL_01":  System/******** directory=DATA_PUMP_DIR dumpfile=RESPALDO_07-20-2023_11-06-10-25.dmp logfile=respaldo_07-20-2023_11-06-10-25.log remap_schema=PROYECTO_FINAL:CONTINGENCIA_PROYECTO 
+Procesando el tipo de objeto SCHEMA_EXPORT/DEFAULT_ROLE
+Procesando el tipo de objeto SCHEMA_EXPORT/PRE_SCHEMA/PROCACT_SCHEMA
+Procesando el tipo de objeto SCHEMA_EXPORT/SEQUENCE/SEQUENCE
+Procesando el tipo de objeto SCHEMA_EXPORT/TABLE/TABLE
+Procesando el tipo de objeto SCHEMA_EXPORT/TABLE/TABLE_DATA
+. . "CONTINGENCIA_PROYECTO"."CLIENTES"          10.10 KB       2 filas importadas
+. . "CONTINGENCIA_PROYECTO"."CUENTA"            7.445 KB       2 filas importadas
+. . "CONTINGENCIA_PROYECTO"."CALLE"             6.906 KB       2 filas importadas
+. . "CONTINGENCIA_PROYECTO"."ADMINISTRADOR"       6.5 KB       3 filas importadas
+. . "CONTINGENCIA_PROYECTO"."CORREGIMIENTO"     6.531 KB      57 filas importadas
+. . "CONTINGENCIA_PROYECTO"."DISTRITO"          5.828 KB      19 filas importadas
+. . "CONTINGENCIA_PROYECTO"."PROVINCIA"         5.632 KB       6 filas importadas
+. . "CONTINGENCIA_PROYECTO"."TIPO_TRANSACCION"  5.609 KB       4 filas importadas
+. . "CONTINGENCIA_PROYECTO"."TIPO_CUENTA"       5.585 KB       2 filas importadas
+. . "CONTINGENCIA_PROYECTO"."TIPO_SERVICIO"     5.570 KB       2 filas importadas
+. . "CONTINGENCIA_PROYECTO"."TIPO_CLIENTE"      5.570 KB       2 filas importadas
+. . "CONTINGENCIA_PROYECTO"."ROL_USER"          5.554 KB       2 filas importadas
+. . "CONTINGENCIA_PROYECTO"."PAIS"              5.539 KB       1 filas importadas
+. . "CONTINGENCIA_PROYECTO"."CALLE_EMPR"        6.890 KB       1 filas importadas
+. . "CONTINGENCIA_PROYECTO"."CUENTA_EMP"        7.414 KB       1 filas importadas
+. . "CONTINGENCIA_PROYECTO"."DEPARTAMENTOS"         0 KB       0 filas importadas
+. . "CONTINGENCIA_PROYECTO"."DIRECCION_CLI"     6.914 KB       2 filas importadas
+. . "CONTINGENCIA_PROYECTO"."DIR_EMPRESA"           0 KB       0 filas importadas
+. . "CONTINGENCIA_PROYECTO"."EMPLEADOS"             0 KB       0 filas importadas
+. . "CONTINGENCIA_PROYECTO"."EMPLEADOS_DEPARTAMENTOS"      0 KB       0 filas importadas
+. . "CONTINGENCIA_PROYECTO"."EMPRESA"           9.125 KB       1 filas importadas
+. . "CONTINGENCIA_PROYECTO"."INVERSIONES"           0 KB       0 filas importadas
+. . "CONTINGENCIA_PROYECTO"."PAGOS_TARJETAS"        0 KB       0 filas importadas
+. . "CONTINGENCIA_PROYECTO"."PRESTAMOS"             0 KB       0 filas importadas
+. . "CONTINGENCIA_PROYECTO"."REPORTES_FINANCIEROS"      0 KB       0 filas importadas
+. . "CONTINGENCIA_PROYECTO"."SUCURSALES"            0 KB       0 filas importadas
+. . "CONTINGENCIA_PROYECTO"."TARJETAS_CREDITO"      0 KB       0 filas importadas
+. . "CONTINGENCIA_PROYECTO"."TRANSACCIONES"     8.453 KB       4 filas importadas
+Procesando el tipo de objeto SCHEMA_EXPORT/TABLE/CONSTRAINT/CONSTRAINT
+Procesando el tipo de objeto SCHEMA_EXPORT/TABLE/INDEX/STATISTICS/INDEX_STATISTICS
+Procesando el tipo de objeto SCHEMA_EXPORT/TABLE/CONSTRAINT/REF_CONSTRAINT
+Procesando el tipo de objeto SCHEMA_EXPORT/TABLE/TRIGGER
+Procesando el tipo de objeto SCHEMA_EXPORT/TABLE/STATISTICS/TABLE_STATISTICS
+Procesando el tipo de objeto SCHEMA_EXPORT/STATISTICS/MARKER
+El trabajo "SYSTEM"."SYS_IMPORT_FULL_01" ha terminado correctamente en Jue Jul 20 11:21:44 2023 elapsed 0 00:00:33

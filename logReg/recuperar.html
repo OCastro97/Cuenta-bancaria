@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Financiera IOD</title>
+    <link rel="icon" href="../img/icono.png">
+
+    <link rel="stylesheet" href="../css/logReg/login.css">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="img">
+            <img src="">
+        </div>
+    
+        <div class="form_Login">
+            <form action="../php/recuperarPass.php" method="POST">
+                <img src="../img/icono.png" class="avatar">
+
+                <h2>Recuperar contraseña</h2>
+
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div>
+                        <h5>Email</h5>
+                        <input type="text" class="input" name="email" required>
+                    </div>
+                </div>
+
+                <div class="input-div pass">
+                    <div class="i">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div>
+                        <h5>Nueva Contraseña</h5>
+                        <input type="password" class="input" name="passverficar1" required>
+                    </div>
+                </div>
+                <div class="input-div pass">
+                    <div class="i">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div>
+                        <h5>Vuelve Contraseña</h5>
+                        <input type="password" class="input" name="passverficar2" required>
+                    </div>
+                </div>
+                <!-- <a href="./login.html">Regresar a Login</a> -->
+                <input type="submit" class="btn" value="Recuperar">
+                Iniciar sesión <a href="./login.html">Volver</a>
+            </form>
+        </div>
+    </div>
+    <script src="../js/logReg/login.js"></script>
+</body>
+</html>

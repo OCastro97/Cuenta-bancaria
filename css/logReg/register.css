@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+	/* place-items: center;
+	background-size: cover;
+   	background-position: center; */
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+	background:url(../../img/fondo_login.jpg) no-repeat;
+    grid-gap: 7rem;
+    padding: 0 2rem;
+	background-size: cover;
+   	background-position: center;
+}
+.img{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.form_Login{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+}
+
+.img img{
+	width: 400px;
+}
+
+form{
+	width: 360px;
+    margin-left: -5px;
+    border: 1px solid #b6b6b6;
+    border-radius: 0.35rem;
+    padding: 1.5rem;
+	background-color: #fff;
+	z-index: 1;
+}
+/* ***************Barra de progreso************************* */
+.progressbar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    counter-reset: step;
+	margin: 2rem 0 4rem;
+}
+.progressbar::before,
+.progress{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    background-color: #dcdcdc;
+    z-index: -1;
+}
+.progress{
+    background-color: #6CD0FF;
+    width: 0%;
+    transition: 0.3s;
+}
+  
+.step-progress{
+    width: 2.1875rem;
+    height: 2.1875rem;
+    background-color: #dcdcdc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20%;
+}
+.step-progress::before{
+    counter-increment: step;
+    content: counter(step);
+}
+.step-progress::after{
+    content: attr(data-title);
+    position: absolute;
+    top: calc(100% + .3rem);
+    font-size: 0.85rem;
+    color: #666;
+}
+.progress-active{
+    background-color: #6CD0FF;
+    color: #1C2E4C;
+}
+
+/* *****************Entrada de datos***************** */
+
+.form_Login h3{
+	margin: 15px 0;
+	color: #333;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+}
+
+.form_Login .input-div{
+	position: relative;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    margin: 25px 0;
+    padding: 5px 0;
+    border-bottom: 2px solid #d9d9d9;
+}
+
+.form_Login .input-div.one{
+	margin-top: 0;
+}
+
+.i{
+	color: #d9d9d9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.i i{
+	transition: .3s;
+}
+
+.input-div > div{
+    position: relative;
+	height: 45px;
+}
+
+.input-div > div > .datos{
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #999;
+	font-size: 18px;
+	transition: .3s;
+}
+.input-div > div > .select{
+	position: absolute;
+	left: 10px;
+	top: -15px;
+	/* transform: translateY(-50%); */
+	color: #999;
+	font-size: 15px;
+	/* transition: .3s; */
+}
+
+.input-div:before, .input-div:after{
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	width: 0%;
+	height: 2px;
+	background-color: #1C2E4C;
+	transition: .4s;
+}
+
+.input-div:before{
+	right: 50%;
+}
+
+.input-div:after{
+	left: 50%;
+}
+
+.input-div.focus:before, .input-div.focus:after{
+	width: 50%;
+}
+
+.input-div.focus > div > .datos{
+	top: -5px;
+	font-size: 15px;
+}
+
+.input-div.focus > .i > i{
+	color: #1C2E4C;
+}
+
+.input-div > div > input{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	background: none;
+	padding: 0.5rem 0.7rem;
+	font-size: 1.2rem;
+	color: #555;
+	font-family: 'poppins', sans-serif;
+}
+.input-div > div > select{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	background: none;
+	padding: 0.5rem 0.7rem;
+	font-size: 1.2rem;
+	color: #555;
+	font-family: 'poppins', sans-serif;
+}
+
+.input-div.pass{
+	margin-bottom: 4px;
+}
+
+.volver{
+	display: grid;
+	grid-template-columns: repeat(2, 2fr);
+	grid-gap: 2;
+}
+
+.btn-iniciar{
+	display: block;
+	text-align: right;
+	text-decoration: none;
+	color: #999;
+	font-size: 0.9rem;
+	transition: .3s;
+}
+.back{
+	display: block;
+	text-decoration: none;
+	text-align: left;
+	color: rgb(141, 133, 133);
+	border: 10px;
+}
+.btn-iniciar:hover{
+	color: #1C2E4C;
+}
+
+.btn{
+    padding: 0.75rem;
+    display: block;
+    text-decoration: none;
+    background-image: linear-gradient(to right, #6CD0FF, #1C2E4C);
+	background-size: 200%;
+	font-size: 1.2rem; 
+    border-radius: 25px;
+	border: 0;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+}
+.btn:hover{
+    background-position: right;
+}
+
+/* .btn.btn-reg{
+	/* outline: none;
+	border: 0;
+} */
+
+.btn-group{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.ml-auto{
+    margin-left: auto;
+}
+.width-50{
+    width: 50%;
+}
+.form-step{
+    display: none;
+    transform-origin: top;
+    animation: animate 0.5s;
+}
+.form-step-active{
+    display: block;
+}
+.btn-group{
+    margin: 1rem 0;
+}
+@keyframes animate{
+    from{
+        transform: scale(1, 0);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width: 1050px){
+	.container{
+		grid-gap: 5rem;
+	}
+}
+
+@media screen and (max-width: 1000px){
+	form{
+		width: 290px;
+	}
+
+	.form_Login h2{
+        font-size: 1.4rem;
+        margin: 8px 0;
+	}
+
+	.img img{
+		width: 400px;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.container{
+		grid-template-columns:1fr;
+	}
+
+	.img{
+		display: none;
+	}
+
+	.wave{
+		display: none;
+	}
+
+	.form_Login{
+		justify-content: center;
+	}
+}
